@@ -103,7 +103,7 @@ Respondé directamente con el plan sin preámbulos."""
         with st.spinner("🔄 Generando tu plan personalizado..."):
             try:
                 genai.configure(api_key=api_key)
-                model = genai.GenerativeModel("gemini-1.5-flash")
+                model = genai.GenerativeModel("gemini-2.0-flash")
                 response = model.generate_content(prompt)
                 plan = response.text
 
